@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Brightblue1: hsl(245, 45%, 54%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
+    background-color: var(--Paleblue) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+    
+
+}
+
+
+.container{
+    
+    width: 360px;
+    margin: 100px auto;
+    background-color: var(--Verypaleblue);
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+
+
+
+.hero img{
+    
+    width: 100%;
+    overflow: hidden;
+
+    
+}
+
+.info{
+    text-align: center;
+    padding: 1rem;
+}
+
+.info h1{
+    padding-bottom: 1rem;
+    color: var(--Darkblue);
+    font-weight: 700;
+}
+
+.info p{
+    font-size: 15px;
+    color: var(--Desaturatedblue);
+
+}
+
+
+
+.planflex{
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    gap: 1rem;
+}
+
+.planflex a{
+    text-decoration: none;
+    color: var(--Brightblue);
+    margin-left: 4rem;
+}
+
+.planflex a:hover{
+   color: var(--Darkblue);
+}
+
+
+.planflex p {
+    color: var(--Desaturatedblue);
+}
+
+
+.planflex p span{
+    font-weight: 900; 
+    color: black;
+}
+
+.pay{
+  margin-bottom: 1rem;
+  
+}
+
+
+
+
+    
+
+
+.pay .payment a{
+    display: grid;
+    text-decoration: none;
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue);
+    padding:  9px 20px;
+    border-radius: 9px;
+    margin: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    
+   
+}
+
+.pay .payment a:hover{
+    background-color: var(--Brightblue1);
+}
+
+.pay .cancel a{
+    display: grid;
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pay .cancel a:hover{
+    text-decoration: none;
+    color: var(--Darkblue);
+}
+
+@media only screen and (max-widht: 450px){
+    body {
+        background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+}
